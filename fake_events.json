@@ -98,5 +98,15 @@
       "agenda": [{"time": "17:00", "title":"TensorFlow Mobile"}],
       "description": "AndroidThings – что это такое и для чего. Введение в технологию: поддерживаемые платы и их сравнение, отличие от Android, особенности разработки и практическое применение"
     },
+    {
+      "id": "10",
+      "type": "meetup",
+      "name": "RxJava and Kotlin Coroutines",
+      "speakers": [{"name": "Siarhei Sitsko", "position": "Software Engineer", "avatar": ""}],
+      "date": "24 May 2018,  16:00-16:40",
+      "venue": "улица Академика Купревича 3в, Минск, Беларусь, A301",
+      "agenda": [{"time": "16:00", "title":"RXJAVA VS KOTLIN COROUTINES"}],
+      "description": "Overview of capacities of RxJava and Kotlin Coroutines. RxJava is already a common and everyday approach to create Android applications. This library allows making the quality code, also, using multithreading easier. There are already two versions for RxJava. First of all, we are going to discuss the difference between the versions. Secondly, we are going to discuss the main advantages and disadvantages of using RxJava, when we should use it and when better avoid using RxJava. Thirdly, we are going to discuss advantages of Kotlin Coroutines."
+    }
   ]
 }
