@@ -1,5 +1,4 @@
-{
-  "events": [
+[
     {
       "id": "1",
       "type": "meetup",
@@ -35,7 +34,7 @@
       "speakers": [{"name": "Vadim Kulinich", "position": "Junior Software Engineer", "avatar": ""}],
       "date": "11 September 2018,  17:00-18:00",
       "venue": "Online",
-      "agenda": [],
+      "agenda": [{"time":"", "title":""}],
       "description": "In this talk we’re going to:\n- cover usage of two different Google Frameworks: ARCore and SceneForm\n- demonstrate a concept application\n- share experience and details on using these frameworks\n- demonstrate Cloud Anchors functionality\n- compare with alternative options for AR on Android."
     },
     {
@@ -109,4 +108,3 @@
       "description": "Overview of capacities of RxJava and Kotlin Coroutines. RxJava is already a common and everyday approach to create Android applications. This library allows making the quality code, also, using multithreading easier. There are already two versions for RxJava. First of all, we are going to discuss the difference between the versions. Secondly, we are going to discuss the main advantages and disadvantages of using RxJava, when we should use it and when better avoid using RxJava. Thirdly, we are going to discuss advantages of Kotlin Coroutines."
     }
   ]
-}

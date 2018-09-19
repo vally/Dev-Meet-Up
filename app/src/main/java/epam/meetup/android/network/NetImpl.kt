@@ -2,14 +2,13 @@ package epam.meetup.android.network
 
 import android.content.Context
 import epam.meetup.android.model.Event
+import epam.meetup.android.utils.EventJson
 
-class NetImpl(context: Context) {
+class NetImpl(val context: Context) {
 
-    private val netApi: NetApi
-
-    init {
-        netApi = NetFromJsonImpl(context)
+    fun getEvents() : List<Event> {
+        val json = EventJson().getJsonFromAsset(context)
+        return NetFromJsonImpl(json).getEvents()
     }
 
-    val events: List<Event> = netApi.getEvents()
 }
