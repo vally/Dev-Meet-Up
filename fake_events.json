@@ -1,0 +1,102 @@
+{
+  "events": [
+    {
+      "id": "1",
+      "type": "meetup",
+      "name": "GDG Minsk September Meetup",
+      "speakers": [
+                    {"name": "Vladimir Ivanov", "position": "Lead Software Enginee", "avatar": ""},
+                    {"name": "Anton Minashkin", "position": "Chief Software Engineer", "avatar": ""}
+                  ],
+      "date": "September 20 - 2018",
+      "venue": "Minsk, Kuprevicha 3V - LOFT (7 floor)",
+      "agenda": [
+                  {"time": "18:30", "title": "Registration"},
+                  {"time": "19:00", "title": "Как привнести улучшения в проект и не поседеть"},
+                  {"time": "19:45", "title": "Coffee Break"},
+                  {"time": "19:55", "title": "Dependency Injections in Kotlin"}
+              ],
+      "description": "Есть такое матерное слово «legacy». И каждому разработчику приходится с ним сталкиваться постоянно. Более того, каждый новый проект становится legacy со временем, если не уделять достаточно внимания техническому долгу. В докладе мы поговорим, как жить с особо запущенным случаем, aka проектом возраста более 5 лет.Мы узнаем:как осознать размер долга;как придумать план рефакторинга;провести его максимально безболезненно;как использовать современные технологии во благо рефакторингаНемного теории, много практики, щепотка статистики, нескучные картинки — всё, как вы любите.\nDI is one of the most popular design patterns in Java Applications. If Kotlin is a “brand new Java” - is there anything “brand new” in DI for Kotlin? Lets check what options do we have a do we really still need DI (spoiler: yes!)"
+    },
+    {
+      "id": "2",
+      "type": "meetup",
+      "name": "MotionLayout: Alpha",
+      "speakers": [{"name": "Aliaksandr Aplachykau", "position": "Software Enginee", "avatar": ""}],
+      "date": "12 September 2018,  17:00-17:40",
+      "venue": "улица Академика Купревича 3в, Минск, Belarus, K3V-B536",
+      "agenda": [{"time": "17:00", "title": "MOTIONLAYOUT: ALPHA"}],
+      "description": "The talk will cover the new class MotionLayout available in ConstraintLayout 2.0 and what opportunities does it provide for Android developers. We consider a few examples based on keyframe animation and talk about API capabilities."
+    },
+    {
+      "id": "3",
+      "type": "meetup",
+      "name": "Augmented Reality on Android with Google ARCore & SceneForm",
+      "speakers": [{"name": "Vadim Kulinich", "position": "Junior Software Engineer", "avatar": ""}],
+      "date": "11 September 2018,  17:00-18:00",
+      "venue": "Online",
+      "agenda": [],
+      "description": "In this talk we’re going to:\n- cover usage of two different Google Frameworks: ARCore and SceneForm\n- demonstrate a concept application\n- share experience and details on using these frameworks\n- demonstrate Cloud Anchors functionality\n- compare with alternative options for AR on Android."
+    },
+    {
+      "id": "4",
+      "type": "meetup",
+      "name": "DroidCon Berlin 18",
+      "speakers": [{"name": "Mohsen Shahini", "position": "Senior Software Engineer", "avatar": ""}],
+      "date": "5 September 2018,  18:00-18:45",
+      "venue": "улица Академика Купревича 3в, Минск, Belarus, K3V - B536",
+      "agenda": [{"time": "17:00", "title":"Overview on the DroidCon Berlin 18"}],
+      "description": "I will talk what was interesting in DroidCon Berlin. Also, I will discuss new technologies, libraries and many other interesting things in the Android world that I heard in DroidCon Berlin 18. "
+    },
+    {
+      "id": "5",
+      "type": "meetup",
+      "name": "Генеральная уборка в APK",
+      "speakers": [{"name": "Kiryl Rozau", "position": "Lead Software Engineer", "avatar": ""}],
+      "date": "21 August 2018,  16:30-17:15",
+      "venue": "Online",
+      "agenda": [{"time": "16:30", "title":"ГЕНЕРАЛЬНАЯ УБОРКА В APK"}],
+      "description": "Вы знали о том, что в большей части мира загрузка небольшого приложения может вылиться в 5-10 минут томительного ожидания? А о том, что есть прямая зависимость между размером APK и количеством загрузок? Выход есть! Из доклада вы сможете узнать как можно оптимизировать размер APK файла вашего приложения и зачем это нужно."
+    },
+    {
+      "id": "6",
+      "type": "meetup",
+      "name": "TensorFlow Mobile",
+      "speakers": [{"name": "Andrii Drobiazko", "position": "Senior Software Engineer", "avatar": ""}],
+      "date": "14 August 2018,  17:00-18:00",
+      "venue": "Online",
+      "agenda": [{"time": "17:00", "title":"TensorFlow Mobile"}],
+      "description": "At this talk we will:\n- share our experience on using TensorFlow Mobile from Android Developer’s point of view\n- tell about requirements and expertice needed to start developing neural networks with TF\n- differentiate TensorFlow Mobile and Lite\n- discuss opportunities and use cases"
+    },
+    {
+      "id": "7",
+      "type": "meetup",
+      "name": "Генеральная уборка в APK",
+      "speakers": [{"name": "Kiryl Rozau", "position": "Lead Software Engineer", "avatar": ""}],
+      "date": "13 July 2018,  17:00-17:45",
+      "venue": "улица Академика Купревича 3в, Минск, Belarus",
+      "agenda": [{"time": "17:00", "title":"ГЕНЕРАЛЬНАЯ УБОРКА В APK"}],
+      "description": "Вы знали о том, что в большей части мира загрузка небольшого приложения может вылиться в 5-10 минут томительного ожидания? А о том, что есть прямая зависимость между размером APK и количеством загрузок? Выход есть! Из доклада вы сможете узнать как можно оптимизировать размер APK файла вашего приложения и зачем это нужно."
+    },
+    {
+      "id": "8",
+      "type": "meetup",
+      "name": "О чем говорили на конференции Google IO 2018",
+      "speakers": [{"name": "Uladzimir Klyshevich", "position": "Software Engineering Team Leader", "avatar": ""}],
+      "date": "7 Июня 2018,  16:00-18:00",
+      "venue": "vulісa Akadеmіka Kuprеvіča 3в, Minsk, Belarus, LOFT",
+      "agenda": [{"time": "16:00", "title":"О чем говорили на конференции Google IO 2018"}],
+      "description": "Я расскажу о последних новинках и идеях, которые обсуждались  на ежегодной конференции Google IO 2018, поделюсь услышанным о будущем мобильной ОС Android, Kotlin, усилиях Google в направлении развития искусственного интеллекта, Android Studio, ExoPlayer. Вместе мы разберем то, что осталось за кадром, и то, что обсуждалось с разработчиками из Google в Office Hour's.И самое главное: обсудим, что нужно делать Android разработчикам уже сейчас, что в ближайшей перспективе, а от чего стоит отказаться. "
+    },
+    {
+      "id": "9",
+      "type": "meetup",
+      "name": "Android Things: Get Started",
+      "speakers": [{"name": "Andrei Ortyashov", "position": "Software Engineer", "avatar": ""}],
+      "date": "30 May 2018,  16:00-17:00",
+      "venue": "Online",
+      "agenda": [{"time": "17:00", "title":"TensorFlow Mobile"}],
+      "description": "AndroidThings – что это такое и для чего. Введение в технологию: поддерживаемые платы и их сравнение, отличие от Android, особенности разработки и практическое применение"
+    },
+  ]
+}
