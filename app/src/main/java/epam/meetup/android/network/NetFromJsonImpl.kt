@@ -13,7 +13,14 @@ class NetFromJsonImpl(private val json: String) : NetApi {
     }
 
     override fun findEvents(title: String): List<Event> {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        val list = getDataFromJson(json)
+        val result  = ArrayList<Event>()
+        for (event: Event in list) {
+            if (event.name.contains(title, false)) {
+                result.add(event)
+            }
+        }
+        return result
     }
 
     override fun findEvents(from: Date, to: Date): List<Event> {
@@ -21,7 +28,14 @@ class NetFromJsonImpl(private val json: String) : NetApi {
     }
 
     override fun findEvents(speaker: Speaker): List<Event> {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        val list = getDataFromJson(json)
+        val result  = ArrayList<Event>()
+        for (event: Event in list) {
+            if (event.speakers.contains(speaker)) {
+                result.add(event)
+            }
+        }
+        return result
     }
 
     private fun getDataFromJson(json: String): List<Event> {
