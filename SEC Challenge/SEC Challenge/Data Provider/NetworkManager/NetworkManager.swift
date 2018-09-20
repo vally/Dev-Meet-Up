@@ -11,12 +11,11 @@ import Foundation
 protocol NetworkManager {
     
     typealias FileContents = [String:[[String:Any]]]
-    typealias NetworkResponse = (FileContents)->()
     
     /**
      This function makes a request to "backend"
      
      - parameter completion: Completion handler that gets array of dictionaries (JSON) with raw records as argument
      */
-    func getEvents(completion: NetworkResponse)
+    func getEvents(completion: (FileContents)->())
 }

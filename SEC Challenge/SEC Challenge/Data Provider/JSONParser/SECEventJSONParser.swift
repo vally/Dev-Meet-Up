@@ -12,7 +12,7 @@ class SECEventJSONParser: JSONParser {
     
     let dateFormatter = DateFormatter()
     
-    func parsed(json: SingleItemJSON) -> [Any]? {
+    func parsed(json: SingleDictionaryJSON) -> [Any]? {
         return parsedEvents(json?[SECEventKeys.events.rawValue])
     }
     

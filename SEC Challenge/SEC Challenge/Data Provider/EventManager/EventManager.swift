@@ -10,14 +10,12 @@ import Foundation
 
 protocol EventManager {
     
-    typealias EventResponse = ([SECEvent]?)->()
-    
     /**
      This function makes a request to "backend"
      
      - parameter completion: Completion handler that gets array of **SECEvents** as argument
      */
-    func getEvents(completion: EventResponse)
+    func getEvents(completion: ([SECEvent]?)->() )
     
     /**
      This function returns list of **SECEvents**

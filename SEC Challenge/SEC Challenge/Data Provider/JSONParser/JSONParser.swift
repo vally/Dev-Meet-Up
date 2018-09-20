@@ -10,11 +10,11 @@ import Foundation
 
 protocol JSONParser {
     
-    typealias SingleItemJSON = [String:[[String:Any]]]?
+    typealias SingleDictionaryJSON = [String:[[String:Any]]]?
     typealias ArrayOfDictionariesJSON = [[String:Any]]?
     
     /**
      Returns **Array** of parsed elements
     */
-    func parsed(json: SingleItemJSON) -> [Any]?
+    func parsed(json: SingleDictionaryJSON) -> [Any]?
 }
