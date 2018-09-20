@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		446474702152ADAF004B7F19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4464746F2152ADAF004B7F19 /* AppDelegate.swift */; };
+		446474722152ADAF004B7F19 /* SECMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446474712152ADAF004B7F19 /* SECMainViewController.swift */; };
+		446474752152ADAF004B7F19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 446474732152ADAF004B7F19 /* Main.storyboard */; };
+		446474772152ADB0004B7F19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 446474762152ADB0004B7F19 /* Assets.xcassets */; };
+		4464747A2152ADB0004B7F19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 446474782152ADB0004B7F19 /* LaunchScreen.storyboard */; };
+		446474852152ADB0004B7F19 /* SEC_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446474842152ADB0004B7F19 /* SEC_ChallengeTests.swift */; };
+		446474902152AE66004B7F19 /* fake_events.json in Resources */ = {isa = PBXBuildFile; fileRef = 4464748F2152AE66004B7F19 /* fake_events.json */; };
+		446474972152AF41004B7F19 /* SECEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446474962152AF41004B7F19 /* SECEvent.swift */; };
+		446474992152B025004B7F19 /* SECEventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446474982152B025004B7F19 /* SECEventType.swift */; };
+		4464749B2152B117004B7F19 /* SECSpeaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4464749A2152B117004B7F19 /* SECSpeaker.swift */; };
+		4464749D2152B1AB004B7F19 /* SECAgendaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4464749C2152B1AB004B7F19 /* SECAgendaItem.swift */; };
+		4464749F2152B2AF004B7F19 /* EventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4464749E2152B2AF004B7F19 /* EventManager.swift */; };
+		446474A12152B4DC004B7F19 /* SECEventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446474A02152B4DC004B7F19 /* SECEventManager.swift */; };
+		446474A32152BD1E004B7F19 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446474A22152BD1E004B7F19 /* NetworkManager.swift */; };
+		446474A52152BE64004B7F19 /* SECNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446474A42152BE64004B7F19 /* SECNetworkManager.swift */; };
+		446474AA2152C48F004B7F19 /* SECEventKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446474A92152C48F004B7F19 /* SECEventKeys.swift */; };
+		446474AC2152CE96004B7F19 /* SECEventJSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446474AB2152CE96004B7F19 /* SECEventJSONParser.swift */; };
+		446474AE2152CF22004B7F19 /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446474AD2152CF22004B7F19 /* JSONParser.swift */; };
+		446474B02153AE08004B7F19 /* SECConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446474AF2153AE08004B7F19 /* SECConstants.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		446474812152ADB0004B7F19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 446474642152ADAE004B7F19 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4464746B2152ADAE004B7F19;
+			remoteInfo = "SEC Challenge";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4464746C2152ADAE004B7F19 /* SEC Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SEC Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4464746F2152ADAF004B7F19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		446474712152ADAF004B7F19 /* SECMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SECMainViewController.swift; sourceTree = "<group>"; };
+		446474742152ADAF004B7F19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		446474762152ADB0004B7F19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		446474792152ADB0004B7F19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4464747B2152ADB0004B7F19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		446474802152ADB0004B7F19 /* SEC ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SEC ChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		446474842152ADB0004B7F19 /* SEC_ChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SEC_ChallengeTests.swift; sourceTree = "<group>"; };
+		446474862152ADB0004B7F19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4464748F2152AE66004B7F19 /* fake_events.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fake_events.json; sourceTree = "<group>"; };
+		446474962152AF41004B7F19 /* SECEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SECEvent.swift; sourceTree = "<group>"; };
+		446474982152B025004B7F19 /* SECEventType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SECEventType.swift; sourceTree = "<group>"; };
+		4464749A2152B117004B7F19 /* SECSpeaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SECSpeaker.swift; sourceTree = "<group>"; };
+		4464749C2152B1AB004B7F19 /* SECAgendaItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SECAgendaItem.swift; sourceTree = "<group>"; };
+		4464749E2152B2AF004B7F19 /* EventManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventManager.swift; sourceTree = "<group>"; };
+		446474A02152B4DC004B7F19 /* SECEventManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SECEventManager.swift; sourceTree = "<group>"; };
+		446474A22152BD1E004B7F19 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		446474A42152BE64004B7F19 /* SECNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SECNetworkManager.swift; sourceTree = "<group>"; };
+		446474A92152C48F004B7F19 /* SECEventKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SECEventKeys.swift; sourceTree = "<group>"; };
+		446474AB2152CE96004B7F19 /* SECEventJSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SECEventJSONParser.swift; sourceTree = "<group>"; };
+		446474AD2152CF22004B7F19 /* JSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
+		446474AF2153AE08004B7F19 /* SECConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SECConstants.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		446474692152ADAE004B7F19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4464747D2152ADB0004B7F19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		446474632152ADAE004B7F19 = {
+			isa = PBXGroup;
+			children = (
+				4464746E2152ADAE004B7F19 /* SEC Challenge */,
+				446474832152ADB0004B7F19 /* SEC ChallengeTests */,
+				4464746D2152ADAE004B7F19 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4464746D2152ADAE004B7F19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4464746C2152ADAE004B7F19 /* SEC Challenge.app */,
+				446474802152ADB0004B7F19 /* SEC ChallengeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4464746E2152ADAE004B7F19 /* SEC Challenge */ = {
+			isa = PBXGroup;
+			children = (
+				446474952152AEBD004B7F19 /* Controllers */,
+				446474942152AEB0004B7F19 /* Models */,
+				446474922152AE95004B7F19 /* Data Provider */,
+				446474932152AEA7004B7F19 /* Storyboards */,
+				446474912152AE78004B7F19 /* Supporting Files */,
+			);
+			path = "SEC Challenge";
+			sourceTree = "<group>";
+		};
+		446474832152ADB0004B7F19 /* SEC ChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				446474842152ADB0004B7F19 /* SEC_ChallengeTests.swift */,
+				446474862152ADB0004B7F19 /* Info.plist */,
+			);
+			path = "SEC ChallengeTests";
+			sourceTree = "<group>";
+		};
+		446474912152AE78004B7F19 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4464746F2152ADAF004B7F19 /* AppDelegate.swift */,
+				4464748F2152AE66004B7F19 /* fake_events.json */,
+				4464747B2152ADB0004B7F19 /* Info.plist */,
+				446474762152ADB0004B7F19 /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		446474922152AE95004B7F19 /* Data Provider */ = {
+			isa = PBXGroup;
+			children = (
+				446474A62152BECF004B7F19 /* EventManager */,
+				446474B12153B5AD004B7F19 /* JSONParser */,
+				446474A72152BED9004B7F19 /* NetworkManager */,
+			);
+			path = "Data Provider";
+			sourceTree = "<group>";
+		};
+		446474932152AEA7004B7F19 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				446474732152ADAF004B7F19 /* Main.storyboard */,
+				446474782152ADB0004B7F19 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		446474942152AEB0004B7F19 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				446474A82152BEEF004B7F19 /* Event Models */,
+				446474AF2153AE08004B7F19 /* SECConstants.swift */,
+				446474A92152C48F004B7F19 /* SECEventKeys.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		446474952152AEBD004B7F19 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				446474712152ADAF004B7F19 /* SECMainViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		446474A62152BECF004B7F19 /* EventManager */ = {
+			isa = PBXGroup;
+			children = (
+				4464749E2152B2AF004B7F19 /* EventManager.swift */,
+				446474A02152B4DC004B7F19 /* SECEventManager.swift */,
+			);
+			path = EventManager;
+			sourceTree = "<group>";
+		};
+		446474A72152BED9004B7F19 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				446474A22152BD1E004B7F19 /* NetworkManager.swift */,
+				446474A42152BE64004B7F19 /* SECNetworkManager.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		446474A82152BEEF004B7F19 /* Event Models */ = {
+			isa = PBXGroup;
+			children = (
+				4464749C2152B1AB004B7F19 /* SECAgendaItem.swift */,
+				446474962152AF41004B7F19 /* SECEvent.swift */,
+				446474982152B025004B7F19 /* SECEventType.swift */,
+				4464749A2152B117004B7F19 /* SECSpeaker.swift */,
+			);
+			path = "Event Models";
+			sourceTree = "<group>";
+		};
+		446474B12153B5AD004B7F19 /* JSONParser */ = {
+			isa = PBXGroup;
+			children = (
+				446474AB2152CE96004B7F19 /* SECEventJSONParser.swift */,
+				446474AD2152CF22004B7F19 /* JSONParser.swift */,
+			);
+			path = JSONParser;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4464746B2152ADAE004B7F19 /* SEC Challenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 446474892152ADB0004B7F19 /* Build configuration list for PBXNativeTarget "SEC Challenge" */;
+			buildPhases = (
+				446474682152ADAE004B7F19 /* Sources */,
+				446474692152ADAE004B7F19 /* Frameworks */,
+				4464746A2152ADAE004B7F19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SEC Challenge";
+			productName = "SEC Challenge";
+			productReference = 4464746C2152ADAE004B7F19 /* SEC Challenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4464747F2152ADB0004B7F19 /* SEC ChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4464748C2152ADB0004B7F19 /* Build configuration list for PBXNativeTarget "SEC ChallengeTests" */;
+			buildPhases = (
+				4464747C2152ADB0004B7F19 /* Sources */,
+				4464747D2152ADB0004B7F19 /* Frameworks */,
+				4464747E2152ADB0004B7F19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				446474822152ADB0004B7F19 /* PBXTargetDependency */,
+			);
+			name = "SEC ChallengeTests";
+			productName = "SEC ChallengeTests";
+			productReference = 446474802152ADB0004B7F19 /* SEC ChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		446474642152ADAE004B7F19 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = SEC2018;
+				TargetAttributes = {
+					4464746B2152ADAE004B7F19 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					4464747F2152ADB0004B7F19 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 4464746B2152ADAE004B7F19;
+					};
+				};
+			};
+			buildConfigurationList = 446474672152ADAE004B7F19 /* Build configuration list for PBXProject "SEC Challenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 446474632152ADAE004B7F19;
+			productRefGroup = 4464746D2152ADAE004B7F19 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4464746B2152ADAE004B7F19 /* SEC Challenge */,
+				4464747F2152ADB0004B7F19 /* SEC ChallengeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4464746A2152ADAE004B7F19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4464747A2152ADB0004B7F19 /* LaunchScreen.storyboard in Resources */,
+				446474772152ADB0004B7F19 /* Assets.xcassets in Resources */,
+				446474752152ADAF004B7F19 /* Main.storyboard in Resources */,
+				446474902152AE66004B7F19 /* fake_events.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4464747E2152ADB0004B7F19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		446474682152ADAE004B7F19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				446474A32152BD1E004B7F19 /* NetworkManager.swift in Sources */,
+				446474A12152B4DC004B7F19 /* SECEventManager.swift in Sources */,
+				446474722152ADAF004B7F19 /* SECMainViewController.swift in Sources */,
+				4464749D2152B1AB004B7F19 /* SECAgendaItem.swift in Sources */,
+				446474AE2152CF22004B7F19 /* JSONParser.swift in Sources */,
+				446474AC2152CE96004B7F19 /* SECEventJSONParser.swift in Sources */,
+				446474972152AF41004B7F19 /* SECEvent.swift in Sources */,
+				4464749F2152B2AF004B7F19 /* EventManager.swift in Sources */,
+				4464749B2152B117004B7F19 /* SECSpeaker.swift in Sources */,
+				446474B02153AE08004B7F19 /* SECConstants.swift in Sources */,
+				446474AA2152C48F004B7F19 /* SECEventKeys.swift in Sources */,
+				446474702152ADAF004B7F19 /* AppDelegate.swift in Sources */,
+				446474A52152BE64004B7F19 /* SECNetworkManager.swift in Sources */,
+				446474992152B025004B7F19 /* SECEventType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4464747C2152ADB0004B7F19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				446474852152ADB0004B7F19 /* SEC_ChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		446474822152ADB0004B7F19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4464746B2152ADAE004B7F19 /* SEC Challenge */;
+			targetProxy = 446474812152ADB0004B7F19 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		446474732152ADAF004B7F19 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				446474742152ADAF004B7F19 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		446474782152ADB0004B7F19 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				446474792152ADB0004B7F19 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		446474872152ADB0004B7F19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		446474882152ADB0004B7F19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4464748A2152ADB0004B7F19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/SEC Challenge/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.epam.SEC2018.SEC-Challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4464748B2152ADB0004B7F19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/SEC Challenge/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.epam.SEC2018.SEC-Challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4464748D2152ADB0004B7F19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "SEC ChallengeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.epam.SEC2018.SEC-ChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SEC Challenge.app/SEC Challenge";
+			};
+			name = Debug;
+		};
+		4464748E2152ADB0004B7F19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "SEC ChallengeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.epam.SEC2018.SEC-ChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SEC Challenge.app/SEC Challenge";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		446474672152ADAE004B7F19 /* Build configuration list for PBXProject "SEC Challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				446474872152ADB0004B7F19 /* Debug */,
+				446474882152ADB0004B7F19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		446474892152ADB0004B7F19 /* Build configuration list for PBXNativeTarget "SEC Challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4464748A2152ADB0004B7F19 /* Debug */,
+				4464748B2152ADB0004B7F19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4464748C2152ADB0004B7F19 /* Build configuration list for PBXNativeTarget "SEC ChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4464748D2152ADB0004B7F19 /* Debug */,
+				4464748E2152ADB0004B7F19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 446474642152ADAE004B7F19 /* Project object */;
+}
