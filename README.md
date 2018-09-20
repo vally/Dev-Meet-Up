@@ -1,5 +1,7 @@
 # Dev-Meet-Up
-SEC Mobile Challenge for iOS &amp; Android developers.
+
+What do the EPAM mobile community, GDG Minsk and other mobile developers build, in quarter hour in EPAM SEC 2018?
+We have an interesting and incredible challenge for mobile developers.
 
 All developers, engineers, programmers and other people can attend this challenge. 
 
