@@ -1,29 +1,27 @@
 package epam.meetup.android.network
 
-import android.content.Context
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import epam.meetup.android.model.Event
 import epam.meetup.android.model.Speaker
-import java.io.IOException
-import java.nio.charset.Charset
-import java.util.*
+import java.util.Date
 
-class NetFromJsonImpl(val context: Context) : NetApi {
+//TODO how we can look up this class?
+class NetFromJsonImpl(private val json: String) : NetApi {
 
-    private val events: List<Event>
-
-    init {
-        val gson = Gson()
-        val collectionType = object : TypeToken<Collection<Int>>() {}.type
-        events = gson.fromJson(loadJSONFromAsset(), collectionType)
-    }
     override fun getEvents(): List<Event> {
-        return events
+        return getDataFromJson(json)
     }
 
     override fun findEvents(title: String): List<Event> {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        val list = getDataFromJson(json)
+        val result  = ArrayList<Event>()
+        for (event: Event in list) {
+            if (event.name.contains(title, false)) {
+                result.add(event)
+            }
+        }
+        return result
     }
 
     override fun findEvents(from: Date, to: Date): List<Event> {
@@ -31,23 +29,18 @@ class NetFromJsonImpl(val context: Context) : NetApi {
     }
 
     override fun findEvents(speaker: Speaker): List<Event> {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        val list = getDataFromJson(json)
+        val result  = ArrayList<Event>()
+        for (event: Event in list) {
+            if (event.speakers.contains(speaker)) {
+                result.add(event)
+            }
+        }
+        return result
     }
 
-    //FIXME here is required better solution
-    private fun loadJSONFromAsset(): String {
-        val json: String
-        try {
-            val eventJson = context.assets.open("yourfilename.json")
-            val size = eventJson.available()
-            val buffer = ByteArray(size)
-            eventJson.read(buffer)
-            eventJson.close()
-            json = String(buffer, Charset.forName("UTF-8"))
-        } catch (e: IOException) {
-            error(e)
-        }
-
-        return json
+    private fun getDataFromJson(json: String): List<Event> {
+        val collectionType = object : TypeToken<List<Event>>() {}.type
+        return Gson().fromJson(json, collectionType)
     }
 }

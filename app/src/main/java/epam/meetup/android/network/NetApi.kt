@@ -5,6 +5,7 @@ import epam.meetup.android.model.Speaker
 import java.util.*
 
 interface NetApi {
+
     fun getEvents(): List<Event>
 
     fun findEvents(title: String): List<Event>
