@@ -6,6 +6,7 @@ import epam.meetup.android.model.Event
 import epam.meetup.android.model.Speaker
 import java.util.Date
 
+//TODO how we can look up this class?
 class NetFromJsonImpl(private val json: String) : NetApi {
 
     override fun getEvents(): List<Event> {

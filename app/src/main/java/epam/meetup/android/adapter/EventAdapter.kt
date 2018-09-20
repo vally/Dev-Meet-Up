@@ -8,6 +8,8 @@ import androidx.recyclerview.widget.RecyclerView
 import epam.meetup.android.dev_meet_up.R
 import epam.meetup.android.model.Event
 
+
+//TODO Here maybe exist some bugs. Could you look up the adapter?
 class EventAdapter(private val events: List<Event>) : RecyclerView.Adapter<EventAdapter.EventHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): EventHolder {
@@ -19,9 +21,7 @@ class EventAdapter(private val events: List<Event>) : RecyclerView.Adapter<Event
     }
 
     override fun onBindViewHolder(holder: EventHolder, position: Int) {
-        holder.title.text = events[position].name
-        holder.description.text = events[position].description
-        holder.date.text = events[position].date
+        holder.bind(events[position])
     }
 
 
@@ -30,5 +30,11 @@ class EventAdapter(private val events: List<Event>) : RecyclerView.Adapter<Event
         val title: TextView = itemView.findViewById(R.id.list_event_title)
         val description: TextView = itemView.findViewById(R.id.list_event_description)
         val date: TextView = itemView.findViewById(R.id.list_event_date)
+
+        fun bind(event: Event) {
+            description.text = event.description
+            date.text = event.date
+            title.text = event.name
+        }
     }
 }

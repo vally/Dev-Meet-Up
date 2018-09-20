@@ -8,6 +8,8 @@ import epam.meetup.android.adapter.EventAdapter
 import epam.meetup.android.dev_meet_up.R
 import epam.meetup.android.network.NetImpl
 
+
+//TODO Could you look up this screen and list of events?
 class MainActivity : AppCompatActivity() {
 
 
