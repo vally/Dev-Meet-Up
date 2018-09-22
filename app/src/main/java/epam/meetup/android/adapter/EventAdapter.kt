@@ -10,18 +10,26 @@ import epam.meetup.android.model.Event
 
 
 //TODO Here maybe exist some bugs. Could you look up the adapter?
-class EventAdapter(private val events: List<Event>) : RecyclerView.Adapter<EventAdapter.EventHolder>(),
-    View.OnClickListener {
+class EventAdapter(
+        private val events: List<Event>,
+        private val eventListener: EventsListener
+) : RecyclerView.Adapter<EventAdapter.EventHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): EventHolder {
         var holder = EventHolder(LayoutInflater.from(parent.context).inflate(R.layout.event_row, parent, false))
-        holder.itemView.setOnClickListener(this)
+        //holder.itemView.setOnClickListener(this)
         return holder
     }
 
-    override fun onClick(v: View?) {
-        
+    override fun onBindViewHolder(holder: EventHolder, position: Int, payloads: MutableList<Any>) {
+        super.onBindViewHolder(holder, position, payloads)
+        holder.bind(events[position])
+        holder.itemView.setOnClickListener { eventListener.onEventSelected(events[position]) }
     }
+
+//    override fun onClick(v: View?) {
+//
+//    }
 
     override fun getItemCount(): Int {
         return events.size
@@ -34,9 +42,9 @@ class EventAdapter(private val events: List<Event>) : RecyclerView.Adapter<Event
 
     class EventHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-        val title: TextView = itemView.findViewById(R.id.list_event_title)
-        val description: TextView = itemView.findViewById(R.id.list_event_description)
-        val date: TextView = itemView.findViewById(R.id.list_event_date)
+        private val title: TextView = itemView.findViewById(R.id.list_event_title)
+        private val description: TextView = itemView.findViewById(R.id.list_event_description)
+        private val date: TextView = itemView.findViewById(R.id.list_event_date)
 
         fun bind(event: Event) {
             description.text = event.description
