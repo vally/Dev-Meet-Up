@@ -10,10 +10,17 @@ import epam.meetup.android.model.Event
 
 
 //TODO Here maybe exist some bugs. Could you look up the adapter?
-class EventAdapter(private val events: List<Event>) : RecyclerView.Adapter<EventAdapter.EventHolder>() {
+class EventAdapter(private val events: List<Event>) : RecyclerView.Adapter<EventAdapter.EventHolder>(),
+    View.OnClickListener {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): EventHolder {
-        return EventHolder(LayoutInflater.from(parent.context).inflate(R.layout.event_row, parent, false))
+        var holder = EventHolder(LayoutInflater.from(parent.context).inflate(R.layout.event_row, parent, false))
+        holder.itemView.setOnClickListener(this)
+        return holder
+    }
+
+    override fun onClick(v: View?) {
+        
     }
 
     override fun getItemCount(): Int {

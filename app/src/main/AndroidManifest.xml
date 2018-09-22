@@ -26,7 +26,11 @@
         <activity android:name="epam.meetup.android.activity.MainActivity" />
         <activity
             android:name="epam.meetup.android.activity.LoginActivity"
-            android:label="@string/title_activity_login"/>
+            android:label="@string/title_activity_login" />
+        <activity
+            android:name="epam.meetup.android.activity.Main2Activity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
